@@ -23,7 +23,9 @@
       </div>
     </div>
     <div id="main-content">
-      <div id="section-form">1</div>
+      <div id="section-form">
+        <StepOne v-if="stepOne"/>
+      </div>
       <div id="section-submit">
         <div id="submit-content">
           <div id="submit-content-wrapper">
@@ -37,11 +39,14 @@
 
 <script>
 import ChevronRight from 'vue-material-design-icons/ChevronRight.vue';
+import StepOne from './components/StepOne.vue';
 
 export default {
   name: 'App',
   components: {
     ChevronRight,
+    StepOne,
+
   },
   data() {
     return {
@@ -121,6 +126,9 @@ body {
       background: #ffffff;
       box-shadow: 2px 10px 20px rgba(255, 138, 0, 0.1);
       border-radius: 4px;
+      #section-form {
+        padding: 30px 30px 30px 40px;
+      }
       #section-submit {
         padding: 50px 20px 20px 0px;
         #submit-content {
