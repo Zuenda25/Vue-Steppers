@@ -1,4 +1,4 @@
-# frontend-test-jakmall
+# Vue Steppers Without Librtary
 
 ## Project setup
 ```
